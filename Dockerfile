@@ -1,5 +1,5 @@
-FROM openjdk:7
+FROM openjdk:8
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
-RUN javac Main.java
-CMD ["java", "Main"]
+RUN javac Hello.java
+CMD ["java", "Hello"]
